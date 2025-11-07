@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hobby Learning Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <div class="logo">Logo</div>
+
+        <button class="hamburger" onclick="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="mainNav">
+          <button class="categories-btn" onclick="toggleMegaMenu()">
+            CATEGORIES
+          </button>
+          <a href="#" class="teach-link">TEACH</a>
+          <div class="auth-buttons">
+            <button class="btn login-btn">LOGIN</button>
+            <button class="btn signup-btn">SIGNUP</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mega-menu" id="megaMenu">
+      <div class="mega-menu-content">
+        <div class="menu-column">
+          <h3>Language</h3>
+          <ul>
+            <li><a href="#">Cooking</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Arts & Craft</a></li>
+            <li><a href="#">Yoga</a></li>
+            <li><a href="#">Academic</a></li>
+            <li><a href="#">Back to Roots</a></li>
+            <li><a href="#">Funteresting</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-column">
+          <h3>All</h3>
+          <ul>
+            <li><a href="#">Indian</a></li>
+            <li><a href="#">Norwegian</a></li>
+            <li><a href="#">Category 04</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-column quote-section">
+          <blockquote>"Do anything, but let it produce joy."</blockquote>
+          <cite>-Walt Whitman</cite>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hobbies❤️ Happiness❤️ Home</h1>
+        <p>
+          A Nordic startup that brings incredibly interesting hobbies from
+          around the world to people of all ages.
+        </p>
+
+        <div class="hero-email-form-container">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="hero-email-input"
+          />
+          <button class="explore-button">
+            START EXPLORING
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/main.jpg" alt="Family enjoying hobbies" />
+        <div class="blob-yellow"></div>
+        <div class="blob-green"></div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">
+          Explore, Enroll, Have Fun, Repeat - here hobby meets happiness
+        </h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Learn something new</h3>
+            <p>
+              Explore your passion and go beyond the physical and mental
+              boundaries of time, age, gender or geography.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h3>Skilled & Passionate Teachers</h3>
+            <p>
+              Hobbynes offers Interactive classes by experts who are qualified
+              and trusted.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💼</div>
+            <h3>Take classes anytime, anywhere</h3>
+            <p>
+              Join sessions at your own convenience and pace, from the comforts
+              of your home.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3>Pay as you go</h3>
+            <p>
+              No enrollment fee for our classes. You only pay for the classes
+              that you take. Your payment is Safe and secure with us.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- discover-section Classes -->
+    <section class="discover-section">
+      <!-- Header -->
+      <div class="discover-header">
+        <h1 class="discover-title">Discover Classes</h1>
+
+        <div class="discover-controls">
+          <a href="#" class="discover-show-all">Show All</a>
+          <div class="currency-toggle">
+            <span class="currency-label">Show prices in:</span>
+            <button class="currency-btn active">NOK</button>
+            <button class="currency-btn">INR</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subtitle -->
+      <p class="discover-subtitle">
+        Choose from a variety of classes from around the world.
+      </p>
+
+      <!-- Cards -->
+      <div class="discover-cards">
+        <!-- Card 1 -->
+        <div class="discover-card">
+          <div class="discover-card-image">
+            <img src="images/Discover classes.jpg" alt="Language Class" />
+            <span class="discover-discount">60% OFF</span>
+          </div>
+          <div class="discover-card-content">
+            <div class="discover-category">Language</div>
+            <h3 class="discover-card-title">
+              Class name - Lorem ipsum sit elit varsit lectusi sit amet
+            </h3>
+            <div class="discover-instructor">by John Doe ⭐ 4.7</div>
+            <p class="discover-description">
+              Learn to communicate effectively with this professional English
+              course focused on confidence and fluency.
+            </p>
+            <div class="discover-footer">
+              <div class="discover-price-box">
+                <span class="discover-price">kr1000</span>
+                <span class="discover-old-price">kr2500</span>
+              </div>
+              <button class="discover-enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="discover-card">
+          <div class="discover-card-image">
+            <img src="images/Discover classes.jpg" alt="Cooking Class" />
+            <span class="discover-discount">60% OFF</span>
+          </div>
+          <div class="discover-card-content">
+            <div class="discover-category">Cooking</div>
+            <h3 class="discover-card-title">
+              Class name - Lorem ipsum sit elit varsit lectusi sit amet
+            </h3>
+            <div class="discover-instructor">by Maria Rossi ⭐ 4.9</div>
+            <p class="discover-description">
+              Discover the art of Italian cuisine with easy, step-by-step
+              recipes guided by a professional chef.
+            </p>
+            <div class="discover-footer">
+              <div class="discover-price-box">
+                <span class="discover-price">kr1200</span>
+                <span class="discover-old-price">kr3000</span>
+              </div>
+              <button class="discover-enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="discover-card">
+          <div class="discover-card-image">
+            <img src="images/Discover classes.jpg" alt="Music Class" />
+            <span class="discover-discount">50% OFF</span>
+          </div>
+          <div class="discover-card-content">
+            <div class="discover-category">Music</div>
+            <h3 class="discover-card-title">
+              Class name - Lorem ipsum sit elit varsit lectusi sit amet
+            </h3>
+            <div class="discover-instructor">by Liam Smith ⭐ 4.8</div>
+            <p class="discover-description">
+              From basic chords to advanced riffs — master guitar playing with
+              structured lessons.
+            </p>
+            <div class="discover-footer">
+              <div class="discover-price-box">
+                <span class="discover-price">₹1,499</span>
+                <span class="discover-old-price">₹2,999</span>
+              </div>
+              <button class="discover-enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="discover-card">
+          <div class="discover-card-image">
+            <img src="images/Discover classes.jpg" alt="Art Class" />
+            <span class="discover-discount">70% OFF</span>
+          </div>
+          <div class="discover-card-content">
+            <div class="discover-category">Art</div>
+            <h3 class="discover-card-title">
+              Class name - Lorem ipsum sit elit varsit lectusi sit amet
+            </h3>
+            <div class="discover-instructor">by Emma Lee ⭐ 4.6</div>
+            <p class="discover-description">
+              Express your creativity with stunning watercolor techniques —
+              perfect for beginners and artists alike.
+            </p>
+            <div class="discover-footer">
+              <div class="discover-price-box">
+                <span class="discover-price">₹999</span>
+                <span class="discover-old-price">₹3,500</span>
+              </div>
+              <button class="discover-enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <!-- ================== CATEGORY SECTION ================== -->
+    <section class="category-section">
+      <!-- Header -->
+      <div class="category-header">
+        <h1>Browse by Category</h1>
+        <!-- <div class="decorative-line"></div> -->
+      </div>
+
+      <!-- Category Grid -->
+      <div class="categories-grid">
+        <div class="category-card">
+          <img src="images/1.jpg" alt="Language" class="category-image" />
+          <div class="category-title">Language</div>
+        </div>
+
+        <div class="category-card selected">
+          <img src="images/2.jpg" alt="Cooking" class="category-image" />
+          <div class="category-title">Cooking</div>
+        </div>
+
+        <div class="category-card">
+          <img src="images/3.jpg" alt="Music" class="category-image" />
+          <div class="category-title">Music</div>
+        </div>
+
+        <div class="category-card">
+          <img src="images/4.jpg" alt="Arts & Craft" class="category-image" />
+          <div class="category-title">Arts & Craft</div>
+        </div>
+
+        <div class="category-card">
+          <img src="images/5.jpg" alt="Yoga" class="category-image" />
+          <div class="category-title">Yoga</div>
+        </div>
+
+        <div class="category-card">
+          <img src="images/6.jpg" alt="Academics" class="category-image" />
+          <div class="category-title">Academics</div>
+        </div>
+
+        <div class="category-card">
+          <img src="images/7.jpg" alt="Back to Roots" class="category-image" />
+          <div class="category-title">Back to Roots</div>
+        </div>
+
+        <div class="category-card">
+          <img src="images/8.jpg" alt="Face Painting" class="category-image" />
+          <div class="category-title">Face Painting</div>
+        </div>
+      </div>
+
+      <!-- Decorative Accent -->
+      <div class="yellow-accent"></div>
+    </section>
+
+    <!-- Reasons -->
+    <div class="reasons-container">
+      <div class="category-header">
+        <!-- <div class="decorative-line"></div> -->
+        <h1>Six reasons to choose our class</h1>
+      </div>
+      <!-- <h2>Six reasons to choose our class</h2> -->
+      <div class="reasons-grid">
+        <div class="reason-card">
+          <div class="icon-container">
+            <div class="reason-icon">💻</div>
+          </div>
+          <h3>Interactive live online classes at your convenient time slots</h3>
+        </div>
+
+        <div class="reason-card">
+          <div class="icon-container">
+            <div class="reason-icon">👨‍🏫</div>
+          </div>
+          <h3>Learning from passionate, talented and trusted teachers</h3>
+        </div>
+
+        <div class="reason-card">
+          <div class="icon-container">
+            <div class="reason-icon">🎯</div>
+          </div>
+          <h3>
+            Cross country sharing of interesting and unique hobbies from across
+            the world
+          </h3>
+        </div>
+
+        <div class="reason-card">
+          <div class="icon-container">
+            <div class="reason-icon">💰</div>
+          </div>
+          <h3>
+            Age no bar for enrolling into your cherished hobby or activity
+            classes
+          </h3>
+        </div>
+
+        <div class="reason-card">
+          <div class="icon-container"></div>
+          <div class="reason-icon">📊</div>
+          <h3>Transparent and structured fee payment options</h3>
+        </div>
+
+        <div class="reason-card">
+          <div class="icon-container">
+            <div class="reason-icon">🌟</div>
+          </div>
+          <h3>
+            Contributing to the revival and nurturing of traditional art forms
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!--Love from community  -->
+    <section class="community-love-section">
+      <h1>Love from community</h1>
+      <div class="testimonials-container">
+        <div class="testimonial-card">
+          <p class="quote">“</p>
+          <div class="person-info">
+            <img
+              src="images/Techer-karandeep.jpg"
+              alt="Karandeep"
+              class="profile-img"
+            />
+            <h3 class="name">Karandeep</h3>
+          </div>
+          <p class="testimonial-text">
+            It is nice to be on an international platform where there are
+            teachers from around the world.
+          </p>
+        </div>
+
+        <div class="testimonial-card highlighted">
+          <p class="quote">“</p>
+          <div class="person-info">
+            <img
+              src="images/Parent-Kalpand.jpg"
+              alt="Kalpana"
+              class="profile-img"
+            />
+            <h3 class="name">Kalpana</h3>
+          </div>
+          <p class="testimonial-text">
+            The best thing about these classes is that they are live and
+            interactive. They have classes which help us to learn specialties
+            and famous activities from other countries as well.
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="quote">“</p>
+          <div class="person-info">
+            <img
+              src="images/student-kirti.jpg"
+              alt="Kirti"
+              class="profile-img"
+            />
+            <h3 class="name">Kirti</h3>
+          </div>
+          <p class="testimonial-text">
+            As a student, I get to explore and learn about the different
+            cultural specialties of another country with native teachers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teachers -->
+    <div class="teachers-container">
+      <h1>Meet Our Teachers</h1>
+
+      <div class="carousel-wrapper">
+        <button class="nav-btn" id="prevBtn" aria-label="Previous">
+          <svg viewBox="0 0 24 24">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="carousel" id="carousel">
+          <!-- Teacher 1 -->
+          <div class="teacher-card">
+            <img
+              src="images/Karandeep.jpg"
+              alt="Karandeep"
+              class="teacher-image"
+            />
+            <div class="teacher-info">
+              <div class="teacher-name">Karandeep</div>
+              <div class="teacher-subject yoga">Yoga</div>
+            </div>
+          </div>
+
+          <!-- Teacher 2 -->
+          <div class="teacher-card">
+            <img src="images/Asier.jpg" alt="Asier" class="teacher-image" />
+            <div class="teacher-info">
+              <div class="teacher-name">Asier</div>
+              <div class="teacher-subject arts">Arts & Craft</div>
+            </div>
+          </div>
+
+          <!-- Teacher 3 -->
+          <div class="teacher-card">
+            <img
+              src="images/Marius Neilson.jpg"
+              alt="Marius Neilson"
+              class="teacher-image"
+            />
+            <div class="teacher-info">
+              <div class="teacher-name">Marius Neilson</div>
+              <div class="teacher-subject academics">Academics</div>
+            </div>
+          </div>
+
+          <!-- Teacher 4 -->
+          <div class="teacher-card">
+            <img
+              src="images/Karandeep.jpg"
+              alt="Nichola"
+              class="teacher-image"
+            />
+            <div class="teacher-info">
+              <div class="teacher-name">Nichola</div>
+              <div class="teacher-subject language">Language</div>
+            </div>
+          </div>
+
+          <!-- Teacher 5 -->
+          <!-- <div class="teacher-card">
+            <img
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop"
+              alt="James"
+              class="teacher-image"
+            />
+            <div class="teacher-info">
+              <div class="teacher-name">James</div>
+              <div class="teacher-subject cooking">Cooking</div>
+            </div>
+          </div> -->
+
+          <!-- Teacher 6 -->
+          <!-- <div class="teacher-card">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop"
+              alt="Emma"
+              class="teacher-image"
+            />
+            <div class="teacher-info">
+              <div class="teacher-name">Emma</div>
+              <div class="teacher-subject music">Music</div>
+            </div>
+           </div> -->
+        </div>
+
+        <button class="nav-btn" id="nextBtn" aria-label="Next">
+          <svg viewBox="0 0 24 24">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Become a Hobbynes Teacher Section -->
+    <section class="teacher-promo">
+      <div class="image-area">
+        <img
+          src="images/startteaching.jpg"
+          alt="Teacher and student having fun"
+        />
+      </div>
+
+      <div class="text-area">
+        <h2>Become a Certified Teacher</h2>
+        <p class="intro-text">
+          We only have the best and trusted teachers from the globe. Join us if
+          you have the skill and passion to share it.
+        </p>
+
+        <ul class="features-list">
+          <li>Make your own schedule</li>
+          <li>Teach students on an international platform</li>
+          <li>
+            Become part of an international community of passionate educators
+          </li>
+        </ul>
+
+        <button class="start-teaching-btn">
+          START TEACHING <span class="arrow-icon">→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- blogs -->
+    <section class="blog-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="blog-header">
+          <h2 class="section-title">Our Blogs</h2>
+          <a href="#" class="show-all-link">SHOW ALL</a>
+        </div>
+
+        <!-- Blog Cards -->
+        <div class="blog-cards">
+          <!-- Blog Card 1 -->
+          <article class="blog-card">
+            <div class="card-image-container">
+              <img
+                src="images/blog1.jpg"
+                alt="Students studying together"
+                class="card-image"
+              />
+              <span class="category-tag">CATEGORY 01</span>
+            </div>
+            <div class="card-content">
+              <h3 class="blog-name">
+                Blog name - Lorem ipsum dolor sit amet, et varius et consectetur
+              </h3>
+              <p class="blog-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
+                varius volutpat sed...
+              </p>
+            </div>
+            <footer class="card-footer">
+              <span class="publisher-name">Publisher name</span>
+              <span class="comment-count">0</span>
+            </footer>
+          </article>
+
+          <!-- Blog Card 2 -->
+          <article class="blog-card">
+            <div class="card-image-container">
+              <img
+                src="images/blog2.jpg"
+                alt="Pencils in a pot"
+                class="card-image"
+              />
+              <span class="category-tag">CATEGORY 03</span>
+            </div>
+            <div class="card-content">
+              <h3 class="blog-name">
+                Blog name - Lorem ipsum dolor sit amet, et varius et consectetur
+              </h3>
+              <p class="blog-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
+                varius volutpat sed...
+              </p>
+            </div>
+            <footer class="card-footer">
+              <span class="publisher-name">Publisher name</span>
+              <span class="comment-count">12</span>
+            </footer>
+          </article>
+
+          <!-- Blog Card 3 -->
+          <article class="blog-card">
+            <div class="card-image-container">
+              <img
+                src="images/blog3.jpg"
+                alt="Hand writing in a notebook"
+                class="card-image"
+              />
+              <span class="category-tag">CATEGORY 02</span>
+            </div>
+            <div class="card-content">
+              <h3 class="blog-name">
+                Blog name - Lorem ipsum dolor sit amet, et varius et consectetur
+              </h3>
+              <p class="blog-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
+                varius volutpat sed...
+              </p>
+            </div>
+            <footer class="card-footer">
+              <span class="publisher-name">Publisher name</span>
+              <span class="comment-count">0</span>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-container">
+        <h2>Start learning new skills today and<br />pursue your passion</h2>
+        <p class="cta-subtitle">
+          Join the community of global learners and start exploring today.
+        </p>
+
+        <div class="cta-form-container">
+          <input
+            type="email"
+            class="email-input"
+            placeholder="Enter your email"
+          />
+          <button class="cta-button">Get Started</button>
+        </div>
+
+        <button class="scroll-button" id="scrollToTopBtn">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Class Categories</h3>
+            <ul>
+              <li><a href="#">Language</a></li>
+              <li><a href="#">Cooking</a></li>
+              <li><a href="#">Music</a></li>
+              <li><a href="#">Arts & Craft</a></li>
+              <li><a href="#">Yoga</a></li>
+              <li><a href="#">Academic</a></li>
+              <li><a href="#">Back To Roots</a></li>
+              <li><a href="#">Funteresting</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Learn</h3>
+            <ul>
+              <li><a href="#">All Classes</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Teach</h3>
+            <ul>
+              <li><a href="#">Become A Teacher</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <div class="footer-promo">
+              <img src="images/footer.jpg" alt="Colorful plates" />
+              <h4>SELL YOUR PRODUCTS WITH US</h4>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>
+            <p>© Project 2021. All rights reserved.</p>
+          </div>
+          <div class="footer-credit">
+            <span>Made with</span>
+            <span class="heart">❤️</span>
+            <span>by SimplePlan</span>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // header
+      function toggleMegaMenu() {
+        const menu = document.getElementById("megaMenu");
+        menu.classList.toggle("active");
+      }
+
+      function toggleMobileMenu() {
+        const nav = document.getElementById("mainNav");
+        nav.classList.toggle("mobile-active");
+      }
+
+      document.addEventListener("click", function (event) {
+        const menu = document.getElementById("megaMenu");
+        const categoriesBtn = document.querySelector(".categories-btn");
+
+        if (!menu.contains(event.target) && event.target !== categoriesBtn) {
+          menu.classList.remove("active");
+        }
+      });
+
+      // tecgher
+      const carousel = document.getElementById("carousel");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+
+      // Scroll amount based on screen size
+      function getScrollAmount() {
+        if (window.innerWidth <= 480) {
+          return 200; // Small mobile
+        } else if (window.innerWidth <= 768) {
+          return 240; // Mobile
+        } else if (window.innerWidth <= 1024) {
+          return 270; // Tablet
+        } else {
+          return 300; // Desktop
+        }
+      }
+
+      // Previous button click
+      prevBtn.addEventListener("click", () => {
+        carousel.scrollBy({
+          left: -getScrollAmount(),
+          behavior: "smooth",
+        });
+      });
+
+      // Next button click
+      nextBtn.addEventListener("click", () => {
+        carousel.scrollBy({
+          left: getScrollAmount(),
+          behavior: "smooth",
+        });
+      });
+
+      // Touch/swipe support for mobile
+      let startX = 0;
+      let scrollLeft = 0;
+      let isDown = false;
+
+      carousel.addEventListener("mousedown", (e) => {
+        isDown = true;
+        carousel.style.cursor = "grabbing";
+        startX = e.pageX - carousel.offsetLeft;
+        scrollLeft = carousel.scrollLeft;
+      });
+
+      carousel.addEventListener("mouseleave", () => {
+        isDown = false;
+        carousel.style.cursor = "grab";
+      });
+
+      carousel.addEventListener("mouseup", () => {
+        isDown = false;
+        carousel.style.cursor = "grab";
+      });
+
+      carousel.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - carousel.offsetLeft;
+        const walk = (x - startX) * 2;
+        carousel.scrollLeft = scrollLeft - walk;
+      });
+
+      // Keyboard navigation
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") {
+          prevBtn.click();
+        } else if (e.key === "ArrowRight") {
+          nextBtn.click();
+        }
+      });
+
+      // Update scroll amount on window resize
+      let resizeTimer;
+      window.addEventListener("resize", () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          // Recalculate if needed
+        }, 250);
+      });
+      // techer
+
+      // Currency toggle functionality
+      document.querySelectorAll(".currency-btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          document
+            .querySelectorAll(".currency-btn")
+            .forEach((b) => b.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+
+      // Bookmark toggle functionality
+      document.querySelectorAll(".discover-bookmark").forEach((icon) => {
+        icon.addEventListener("click", function () {
+          this.classList.toggle("favorited");
+          this.textContent = this.classList.contains("favorited") ? "❤️" : "📑";
+        });
+      });
+
+      // Currency toggle
+      document.querySelectorAll(".currency-btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          document
+            .querySelectorAll(".currency-btn")
+            .forEach((b) => b.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+
+      // uparrow
+      const scrollBtn = document.getElementById("scrollToTopBtn");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          scrollBtn.style.display = "flex";
+        } else {
+          scrollBtn.style.display = "none";
+        }
+      });
+
+      scrollBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>
