@@ -213,7 +213,7 @@ nav {
 
 .mega-menu.active {
   display: block;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .mega-menu-content {
@@ -458,6 +458,7 @@ nav {
     position: static;
     padding: 20px;
     box-shadow: none;
+    margin-top: 61%;
   }
 
   .mega-menu-content {
